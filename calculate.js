@@ -1,6 +1,5 @@
-function calculateTotal(price, discount, tax) {
-    let total = price - (price * discount);
-    return total + (total * tax);
+function calculateTotal(price, discount) {
+    return Math.round(price - (price * discount));
 }
 
 console.log(calculateTotal(100, 0.1, 0.2));
